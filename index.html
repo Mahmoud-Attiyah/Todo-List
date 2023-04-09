@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, <input type="text" id="username" placeholder="John Doe..." autocomplete="off"></h1>
+        <form>
+            <input type="text" placeholder="Enter task name" id="taskInput">
+            <button type="button" class="btn add">Add Task</button>
+        </form>
+        <ul id="taskList">
+            
+        </ul>
+        <div class="footer">
+            <button type="button" class="btn clear">Clear All</button>
+            <p id="taskCount">You have not any tasks</p>
+        </div>
+    </div>
+    <!-- 
+        <div class="container">
+        <h1>Hi, <input type="text" id="username" placeholder="John Doe..." autocomplete="off"></h1>
+        <form>
+            <input type="text" placeholder="Enter task name" id="taskInput">
+            <button type="button" class="btn add" onclick="addTask()">Add Task</button>
+        </form>
+        <ul id="taskList">
+            
+        </ul>
+        <div class="footer">
+            <button type="button" class="btn clear" onclick="clearAll()">Clear All</button>
+            <p id="taskCount">You have not any tasks</p>
+        </div>
+    </div>
+     -->
+    <script src="todo.js"></script>
+</body>
+</html>

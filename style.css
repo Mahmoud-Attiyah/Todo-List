@@ -1,0 +1,159 @@
+
+/* Global */
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+:root {
+    --yellow: #eaff96;
+    --dark1: #151515;
+    --dark2: #2e2e2e;
+    --gray-light: #e6e6e6;
+    --gray-medium: #999999;
+    --blue: #644ed7;
+    --blue2: #522fff;
+    --offwhite: #f5f4fc;
+    --orange: #ce7c12;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark1);
+    color: var(--offwhite);
+}
+
+/* Container */
+
+.container {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: .5em;
+    border: none;
+    border-radius: .3em;
+    font-family: 'Inter';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: .7;
+}
+.btn.add {
+    background-color: var(--yellow);
+    color: var(--dark1);
+}
+.btn.delete {
+    background-color: var(--blue);
+    color: var(--gray-light);
+}
+.btn.clear {
+    background-color: var(--offwhite);
+    color: var(--dark1);
+}
+.btn.edit {
+    background-color: var(--orange);
+    color: var(--offwhite);
+}
+.closeEditScreen {
+    padding: .1em 0.4em;
+    border: none;
+    border-radius: .6em;
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-medium);
+}
+.closeEditScreen:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+/* Input */
+input {
+    padding: .5em;
+    border: none;
+    border-radius: .3em;
+    outline: none;
+    font-weight: 500;
+}
+input#username {
+    background-color: transparent;
+    color: var(--gray-light);
+    font-size: 1.5rem;
+    padding: 0;
+}
+form #taskInput,
+input.editScreenInput {
+    flex: 1;
+}
+
+/* H1 */
+
+h1 {
+    margin: 1em 0;
+}
+
+/* Form */
+
+form {
+    background-color: var(--dark2);
+    display: flex;
+    gap: .4em;
+}
+form button {
+    flex: 0 0 auto;
+}
+
+/* Ul */
+
+ul {
+    list-style: none;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+ul li,
+.edit-screen {
+    background-color: var(--dark2);
+    padding: .5rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+ul li:not(li:last-of-type) {
+    margin-bottom: .5rem;
+}
+ul li span {
+    color: var(--offwhite);
+    font-weight: 500;
+    font-size: .9rem;
+    flex: 1;
+}
+
+.edit-screen {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
